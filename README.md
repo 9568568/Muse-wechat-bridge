@@ -23,8 +23,8 @@
 
 ```bash
 # 2.1 克隆项目
-git clone https://github.com/<owner>/wechat-bridge.git
-cd wechat-bridge
+git clone https://github.com/9568568/Muse-wechat-bridge.git
+cd Muse-wechat-bridge
 
 # 2.2（可选）创建虚拟环境
 python3 -m venv .venv && source .venv/bin/activate
