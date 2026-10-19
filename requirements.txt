@@ -1,0 +1,4 @@
+# 核心功能（login 除外、serve/send/status）只依赖 Python 标准库。
+# 以下为可选功能依赖：
+qrcode[pil]>=7.4      # login 子命令生成二维码图片
+pycryptodome>=3.18    # send-image 子命令：AES-128-ECB 加密上传图片到微信 CDN

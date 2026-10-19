@@ -1,0 +1,17 @@
+[Unit]
+Description=WeChat bridge message receiver (wx_bridge.py serve)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=YOUR_USER
+WorkingDirectory=/path/to/wechat-bridge
+ExecStart=/usr/bin/python3 /path/to/wechat-bridge/wx_bridge.py serve
+Restart=always
+RestartSec=10
+StandardOutput=append:/path/to/wechat-bridge/logs/serve.log
+StandardError=append:/path/to/wechat-bridge/logs/serve.log
+
+[Install]
+WantedBy=default.target

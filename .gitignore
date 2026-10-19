@@ -1,0 +1,19 @@
+# 登录态与凭据（绝不提交！）
+state/
+*.tmp
+
+# 运行时数据
+inbox/
+outbox/
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 系统同步记录（agent 工具元数据，非项目内容）
+*.muse-github-snapshot-sync.json
+*.muse-github-snapshot-sync.json.tmp-*

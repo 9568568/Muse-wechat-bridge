@@ -1,0 +1,4 @@
+# 每 1 分钟扫描 inbox/ 派发新消息（建议配合调度主机上的 worker 使用）
+# 安装：crontab -e 后粘贴以下行（把 /path/to 换成实际项目路径）
+
+* * * * * /usr/bin/python3 /path/to/wechat-bridge/dispatcher.py >> /path/to/wechat-bridge/logs/dispatcher.log 2>&1
